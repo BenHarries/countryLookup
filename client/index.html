@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Google Sign-in API -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id"
+          content="1068304171505-cet97v9tejm03u4b78e108q1e4c7icmi.apps.googleusercontent.com">
+
+    <title>Country Lookup</title>
+
+</head>
+
+<body>
+
+<!-- NavBar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand">Country Lookup</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="" id="account" onclick="return false">Account</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="" id="favourites" onclick="return false">My Favourite Countries</a>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Regions
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" id="africa">Africa</a>
+                    <a class="dropdown-item" id="americas">Americas</a>
+                    <a class="dropdown-item" id="asia">Asia</a>
+                    <a class="dropdown-item" id="europe">Europe</a>
+                    <a class="dropdown-item" id="oceania">Oceania</a>
+                </div>
+            </li>
+        </ul>
+
+
+        <form class="form-inline my-2 my-lg-0" onclick="return false">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search">
+            <button class="btn btn-outline-success my-2 my-sm-0 active-cyan-4" type="submit" id="submit">Search
+            </button>
+        </form>
+
+        <ul class="navbar-nav">
+            <li class="nav-item px-4">
+                <div class="g-signin2" data-onsuccess="onSignIn" id="signIn"></div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Main Section -->
+
+<div class="card-columns" id="content"></div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+<!-- index.js -->
+<script src="index.js"></script>
+
+</body>
+</html>
