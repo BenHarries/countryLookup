@@ -7,7 +7,7 @@
 // Const serverURL storing the server URL.
 let countryList;
 let authInstance = false;
-const serverURL = 'http://localhost:8080/';
+const serverURL = 'https://countrylookup.herokuapp.com/';
 
 // Retrieves ID Token.
 const getIdToken = () => authInstance.currentUser.get().getAuthResponse().id_token;
