@@ -15,6 +15,10 @@ The first half of the documentation will explain the Country Lookup API, The sec
 
 # Country Lookup API
 
+To view the global live version example please navigate to --> `https://countrylookup.herokuapp.com`.
+
+The local version example is instead run by running `'npm start'` in the terminal accessed by --> `http://localhost:8080/`
+
 The Country Lookup API mainly uses the data from the [Rest Countries RESTful API](http://restcountries.eu/#rest-countries) and the structure of the JSON responses produced by the server for the user is similar to the format in which Rest Countries makes responses.
 
 Where full URLs are provided in responses they will be rendered as if the service is running on `'http://localhost:8080/'`.
